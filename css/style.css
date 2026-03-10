@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #de968d;
+  --text-color: white;
+}
+
+@font-face {
+  font-family: "Marcellus", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+  font-family: "Manrope", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+}
+
+.hdr-btm-container {
+  max-width: 1744px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hdr-top-container {
+  /*btm-container*/
+  max-width: 1944px;
+  width: 100%;
+  margin: 0 auto;
+  /* background: linear-gradient(to top, #0000003d, #27252a); */
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.bnt {
+  padding: 19px 20px 19px 32px;
+  color: white;
+  background: var(--primary-color);
+}
+/*Navbar*/
+.offcanvas {
+  flex-direction: row;
+}
+.hdr-btm-section {
+  -webkit-backdrop-filter-backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hdr-top {
+  background: #000;
+}
+.hdr-top-items {
+  /* margin-left: 95px; */
+  padding: 15.5px 0;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 8px;
+  position: relative;
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
+  left: 1px;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  height: 2px;
+  width: 30px;
+  background: black;
+}
+.navbar-toggler::after {
+  position: absolute;
+  content: "";
+  background: black;
+  height: 2px;
+  width: 30px;
+  left: 0px;
+  top: -5px;
+}
+.navbar-toggler::before {
+  position: absolute;
+  content: "";
+  background: black;
+  height: 2px;
+  width: 30px;
+  left: 0px;
+  bottom: 15px;
+}
+
+/* nav,
+.navbarbar .offcanvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offcanvas {
+  flex-grow: 1;
+}
+
+.offcanvas > ul {
+  margin-left: auto;
+} */
+
+/*Banner-section*/
+
+.banner-section {
+  background: url("../assets/Carousel.png") no-repeat center/cover;
+  min-height: 100vh;
+  padding: 300px 0;
+}
+.banner-para {
+  color: white;
+  max-width: 846px;
+}
+.banner-cntn {
+  max-width: 1024px !important;
+}
+.banner-section .title2 h5 {
+  color: var(--primary-color);
+  font-family: "Manrope", sans-serif;
+}
+
+.banner-section .title1 h1 {
+  max-width: 928px !important;
+  color: white;
+  font-family: "Marcellus", sans-serif;
+  margin-top: 50px;
+}
+
+.banner-bnt {
+  margin-top: 50px;
+}
+/*Media queries*/
+@media screen and (max-width: 992px) {
+  .offcanvas {
+    padding-top: 165px;
+    /* flex-direction: column; */
+  }
+}
