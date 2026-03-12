@@ -5,6 +5,7 @@
 }
 :root {
   --primary-color: #de968d;
+  --secondary-bg: #27252a;
   --text-color: white;
 }
 
@@ -46,7 +47,10 @@ p {
   color: white;
   background: var(--primary-color);
 }
-/*Navbar*/
+/********************************Navbar************************/
+.nav-link {
+  color: white;
+}
 .offcanvas {
   flex-direction: row;
 }
@@ -79,43 +83,38 @@ p {
 .navbar-toggler-icon {
   height: 2px;
   width: 30px;
-  background: black;
+  background: white;
+  transition: 0.5s linear;
+  position: relative;
 }
+
 .navbar-toggler::after {
   position: absolute;
   content: "";
-  background: black;
+  background: white;
   height: 2px;
   width: 30px;
   left: 0px;
-  top: -5px;
+  top: 23px;
+  transition: 0.5s linear;
 }
 .navbar-toggler::before {
   position: absolute;
   content: "";
-  background: black;
+  background: white;
   height: 2px;
   width: 30px;
   left: 0px;
-  bottom: 15px;
+  bottom: 18px;
+  transition: 0.5s linear;
 }
 
-/* nav,
-.navbarbar .offcanvas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navbar-toggler.activeshow ~ .navbar-toggler-icon {
+  transform: translateX(-20px);
+  opacity: 0;
 }
 
-.offcanvas {
-  flex-grow: 1;
-}
-
-.offcanvas > ul {
-  margin-left: auto;
-} */
-
-/*Banner-section*/
+/********************************Banner-section**********************/
 
 .banner-section {
   background: url("../assets/Carousel.png") no-repeat center/cover;
@@ -144,10 +143,205 @@ p {
 .banner-bnt {
   margin-top: 50px;
 }
-/*Media queries*/
+
+/***********************************about us section****************************/
+
+.aboutus-section {
+  padding: 95px 0;
+  position: relative;
+}
+
+.booknow-area {
+  background: var(--secondary-bg);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-top: 30px;
+  max-width: 332px !important;
+}
+.calling-button {
+  background: var(--text-color);
+  border-radius: 100px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.booknow-cntn {
+  padding: 18px 0;
+  margin-left: 20px;
+}
+.border-left-color {
+  background: var(--primary-color);
+  height: 85px;
+  width: 35px;
+}
+.aboutus-section .image2 {
+  bottom: -46px;
+  z-index: -1;
+  left: 298px;
+}
+
+.image1 {
+  max-width: 300px !important;
+}
+.about-para h2 {
+  padding: 10px 0;
+}
+
+.know-more-button {
+  margin-top: 30px;
+}
+
+.aboutus-hdr svg {
+  margin-bottom: 20px;
+}
+
+.aboutus-hdr p {
+  color: var(--primary-color);
+}
+
+.about-cntn {
+  max-width: 662px !important;
+}
+.know-more-button {
+  position: relative;
+  z-index: 99;
+}
+.know-more-button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: grey;
+  left: 0;
+  top: -21px;
+}
+
+.aboutus-footer-img {
+  position: absolute;
+  right: 0;
+}
+
+/*******************aboutus-section2********************/
+
+/*********************************Media queries********************/
 @media screen and (max-width: 992px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
   .offcanvas {
-    padding-top: 165px;
-    /* flex-direction: column; */
+    padding-top: 200px;
+
+    flex-direction: column;
+  }
+
+  .offcanvas.show {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 8px;
+    position: relative;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+    left: 1px;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    height: 2px;
+    width: 30px;
+    background: white;
+    transition: 0.5s linear;
+    position: relative;
+  }
+
+  .navbar-toggler::after {
+    position: absolute;
+    content: "";
+    background: white;
+    height: 2px;
+    width: 30px;
+    left: 0px;
+    top: 23px;
+    transition: 0.5s linear;
+    /* transform: rotate(45deg); */
+  }
+  .navbar-toggler::before {
+    position: absolute;
+    content: "";
+    background: white;
+    height: 2px;
+    width: 30px;
+    left: 0px;
+    bottom: 18px;
+    transition: 0.5s linear;
+    /* transform: translateY(50px) rotate(-45deg); */
+  }
+
+  .navbar-toggler.activeshow ~ .navbar-toggler-icon {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  .navbar-toggler.activeshow::after {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler.activeshow::before {
+    transform: translateY(50px) rotate(-45deg);
+  }
+
+  .aboutus-section .row .coloumn-2 {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .aboutus-section .row .coloumn-1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .aboutus-section .row {
+    flex-direction: column;
+  }
+
+  .coloumn-2 .aboutus-cntn {
+    text-align: center;
+  }
+
+  .aboutus-section .image2 {
+    bottom: -46px;
+    z-index: -1;
+    left: 297px;
+  }
+
+  .aboutus-hdr {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .image2 img {
+    max-width: 250px;
+  }
+  .image1 img {
+    max-width: 250px;
+  }
+
+  .booknow-area .booknow-cntn {
+    max-width: 267px !important;
+  }
+
+  .aboutus-section .image2 {
+    bottom: -46px;
+    z-index: -1;
+    left: 200px;
+  }
+
+  .aboutus-footer-img {
+    position: absolute;
+    right: 0;
+    bottom: -160px;
   }
 }
