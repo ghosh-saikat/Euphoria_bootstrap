@@ -9,6 +9,15 @@
   --text-color: white;
 }
 
+.common-hdr {
+  color: var(--primary-color);
+}
+.common-sub-hdr {
+  font-size: 50px;
+  font-family: "Marcellous", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
 @font-face {
   font-family: "Marcellus", serif;
   src: url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
@@ -17,8 +26,8 @@
   src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 }
 
-.hdr-btm-container {
-  max-width: 1744px;
+.custom-container {
+  max-width: 1744px !important;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -65,53 +74,6 @@ p {
 .hdr-top-items {
   /* margin-left: 95px; */
   padding: 15.5px 0;
-}
-
-.navbar-toggler {
-  border: none;
-  padding: 8px;
-  position: relative;
-  z-index: 9999;
-  padding: 0;
-  margin: 0;
-  left: 1px;
-}
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-.navbar-toggler-icon {
-  height: 2px;
-  width: 30px;
-  background: white;
-  transition: 0.5s linear;
-  position: relative;
-}
-
-.navbar-toggler::after {
-  position: absolute;
-  content: "";
-  background: white;
-  height: 2px;
-  width: 30px;
-  left: 0px;
-  top: 23px;
-  transition: 0.5s linear;
-}
-.navbar-toggler::before {
-  position: absolute;
-  content: "";
-  background: white;
-  height: 2px;
-  width: 30px;
-  left: 0px;
-  bottom: 18px;
-  transition: 0.5s linear;
-}
-
-.navbar-toggler.activeshow ~ .navbar-toggler-icon {
-  transform: translateX(-20px);
-  opacity: 0;
 }
 
 /********************************Banner-section**********************/
@@ -215,12 +177,76 @@ p {
   top: -21px;
 }
 
-.aboutus-footer-img {
-  position: absolute;
-  right: 0;
+/*******************aboutus-section2********************/
+
+.aboutus-section2 {
+  padding: 105px 0 150px 0;
+  background: url("../assets/Frame\ 58.png") no-repeat center/cover;
 }
 
-/*******************aboutus-section2********************/
+.aboutus-section2-hdr {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.aboutus-section2-cntn {
+  background: white;
+  padding: 20px 20px 55px 20px;
+  /* margin-left: 45px; */
+}
+
+.aboutus-section2-opening-items {
+  margin-top: 60px;
+}
+
+.aboutus-section2-opening-cntn p {
+  font-size: 30px;
+}
+
+.aboutus-section2-opening-cntn {
+  padding: 30px 20px 30px 20px;
+  color: white;
+}
+
+.opening-line {
+  background: white;
+  height: 100px;
+  width: 2px;
+}
+
+.opening-para,
+.opening-para1 {
+  font-size: 18px;
+}
+
+.opening-para1 {
+  color: var(--primary-color);
+}
+
+.aboutus-section2-opening-items {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+}
+
+/*****************what-else-we-do-section**************/
+
+.what-else-we-do-section {
+  padding: 200px 0 100px 0;
+}
+.what-else-we-do-para1 {
+  font-size: 50px;
+  max-width: 586px;
+}
+
+.what-else-we-do-para {
+  color: var(--primary-color);
+}
+
+/*****************Explore-section**************/
+.explore-section {
+  padding: 95px 0;
+}
 
 /*********************************Media queries********************/
 @media screen and (max-width: 992px) {
@@ -321,7 +347,7 @@ p {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 2560px) {
   .image2 img {
     max-width: 250px;
   }
@@ -342,6 +368,6 @@ p {
   .aboutus-footer-img {
     position: absolute;
     right: 0;
-    bottom: -160px;
+    bottom: -186px;
   }
 }
