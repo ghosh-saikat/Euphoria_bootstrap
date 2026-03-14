@@ -206,6 +206,7 @@ p {
 .aboutus-section2-opening-cntn {
   padding: 30px 20px 30px 20px;
   color: white;
+  max-width: 296px;
 }
 
 .opening-line {
@@ -393,6 +394,110 @@ p {
 
   .aboutus-hdr {
     justify-content: center;
+  }
+
+  .what-else-we-do-items {
+    flex-direction: column;
+  }
+
+  .what-else-we-do-para1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .what-else-we-do-hdr {
+    justify-content: center;
+  }
+  .what-else-we-do-image {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .aboutus-section2-items .row .col-3 {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50% !important;
+    margin-top: 20px;
+  }
+
+  .aboutus-section2-opening-cntn p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutus-section2-opening-items {
+    flex-direction: column;
+    height: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .aboutus-section2-opening-cntn {
+    padding: 0;
+    padding-top: 10px !important;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .opening-line {
+    transform: rotate(90deg);
+    /* display: inline-block; */
+  }
+
+  .what-else-we-do-section {
+    padding-top: 200px !important;
+  }
+
+  .what-else-we-do-hdr {
+    padding-top: 100px;
+  }
+
+  .aboutus-footer-img svg {
+    position: absolute;
+    right: 0;
+    bottom: 36px;
+    height: 300px !important;
+    width: 200px !important;
+  }
+
+  .what-else-we-do-para1 {
+    font-size: 30px;
+  }
+
+  .what-else-we-do-image img {
+    height: 50%;
+    width: 100%;
+  }
+
+  .explore-section-items-maindiv {
+    flex-direction: column;
+  }
+
+  .explore-section .common-sub-hdr {
+    font-size: 40px;
+  }
+  .explore-section .leaf-top {
+    right: -40px;
+  }
+  .explore-section .leaf-btm {
+    bottom: -20px;
+    left: -55px;
+  }
+  .explore-section .explore-section-items1 {
+    margin: 0;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus-footer-img svg {
+    width: 300px;
+    height: 350px;
+  }
+
+  .aboutus-section2-hdr {
+    font-size: 40px;
+    /* margin: 0 auto; */
   }
 }
 
