@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #de968d;
+  --secondary-bg: #27252a;
+  --text-color: white;
+}
+.custom_container1520 {
+  max-width: 1544px !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.common-hdr {
+  color: var(--primary-color);
+}
+
+.common-sub-hdr {
+  font-size: 50px;
+  font-family: "Marcellous", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+@font-face {
+  font-family: "Marcellus", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+  font-family: "Manrope", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+}
+
+.custom-container1320 {
+  max-width: 1344px !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.custom-container1520 {
+  max-width: 1544px !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.custom-container1620 {
+  max-width: 1644px !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hdr-top-container {
+  /*btm-container*/
+  max-width: 1944px;
+  width: 100%;
+  margin: 0 auto;
+  /* background: linear-gradient(to top, #0000003d, #27252a); */
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.bnt {
+  padding: 19px 20px 19px 32px;
+  color: white;
+  background: var(--primary-color);
+}
+/******************************************Navbar**********************************/
+.nav-link {
+  color: white;
+}
+.offcanvas {
+  flex-direction: row;
+}
+.hdr-btm-section {
+  -webkit-backdrop-filter-backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hdr-top {
+  background: #000;
+}
+.hdr-top-items {
+  /* margin-left: 95px; */
+  padding: 15.5px 0;
+}
+
+/********************************Banner-section**********************/
+
+.banner-section {
+  background: url("../services-assets/SERVICE\ HERO\ SEC.png") no-repeat
+    center/cover;
+  min-height: 100vh;
+  padding: 300px 0;
+}
+.banner-para1 {
+  color: white;
+  max-width: 750px;
+  font-size: 30px;
+  font-family: "Manrope", sans-serif;
+  margin: 20px 0;
+}
+.banner-para2 {
+  font-family: "Manrope", sans-serif;
+  color: white;
+  /* max-width: 335px; */
+  font-size: 20px;
+}
+.banner-cntn {
+  max-width: 1024px !important;
+}
+.banner-section .title2 h5 {
+  color: var(--primary-color);
+  font-family: "Manrope", sans-serif;
+}
+
+.banner-section .title1 h1 {
+  max-width: 928px !important;
+  color: white;
+  font-family: "Marcellus", sans-serif;
+  margin-top: 50px;
+}
+
+.banner-bnt {
+  margin-top: 50px;
+}
+
+/************************************Treatment-section******************************/
+
+.treatment-section {
+  padding: 140px 0 80px 0;
+}
+
+.treatment-items .treatment-cntn {
+  max-width: 175px;
+  text-transform: uppercase;
+  font-family: "Marcellous", sans-serif;
+  font-weight: 200;
+}
+.treatment-items {
+  margin-top: 50px;
+}
+
+.treatment-cntn::after {
+  content: "";
+  position: absolute;
+
+  height: 3px;
+  width: 35px;
+  background: var(--primary-color);
+  left: -3px;
+  /* right: 0; */
+  top: 50px;
+}
+
+.treatment-section .row .col-4 img {
+  max-height: 350px !important;
+  /* margin-top: 60px; */
+}
+
+/* .ser-image-section-top .ser-img-top-2 {
+  margin: 0 30px;
+} */
+.treatment-section .ser-image-section-top {
+  margin-top: 60px;
+}
+.ser-image-section-bottom {
+  margin-top: 30px;
+}
+.treatment-cntn > a {
+  color: black;
+}
+/* .treatment-section .ser-img-bottom-2 {
+  margin: 0 30px;
+} */
+
+/************************************Pricing-section********************************/
+
+.pricing-section {
+  padding: 105px 0 160px 0;
+  background: #efc2bc;
+  /* opacity: 0.4; */
+  font-family: "Marcellus", sans-serif;
+}
+
+.pricing-section .pricing-tags {
+  max-width: 785px;
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.pricing-tag-hdr {
+  font-size: 30px;
+}
+
+.pricing-section .price {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.pricing-tag-cntn {
+  margin-left: 20px;
+}
+.pricing-section .pricing-tag {
+  margin-top: 40px;
+}
+
+/******************************************Therapy-section**************************/
+.therapy-section {
+  padding: 120px 0;
+}
+
+.therapy-number {
+  color: var(--primary-color);
+  margin-top: 35px;
+  font-size: 40px;
+  font-family: "Marcellus", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.therapy-hdr {
+  font-family: "Marcellus", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 18px;
+}
+.therapy-para {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  /* max-width: 286px; */
+  color: grey;
+}
+
+.therapy-section .row {
+  margin-top: 80px;
+}
+/*********************************Couple-section********************/
+.couple-massage-section .common-sub-hdr {
+  max-width: 487px;
+  text-align: left;
+  line-height: 50px;
+}
+
+.couple-massage-bnt {
+  margin-top: 50px;
+}
+
+.couple-massage-section .couple-massage-para {
+  margin-top: 20px;
+}
+/********************************Bridal-section*************************/
+
+.bridal-massage-section {
+  padding: 120px 0;
+}
+.bridal-massage-bnt {
+  margin-top: 50px;
+}
+.bridal-massage-section .common-sub-hdr {
+  line-height: 50px;
+}
+.bridal-massage-para {
+  margin-top: 20px;
+}
+
+/****************************Footer-section******************/
+
+.footer-section {
+  padding: 105px 0 0 0;
+  background: #27252a;
+  color: white;
+}
+
+.footer-section a {
+  color: white;
+}
+.footer-section .ftr-para {
+  max-width: 326px;
+  margin: 20px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  color: #949197;
+}
+.footer-section .location-img,
+.call-image {
+  margin-right: 20px;
+}
+
+.footer-cntn a {
+  margin-bottom: 20px;
+}
+
+.footer-social-links .links a {
+  margin: 0 12.5px !important;
+  padding: 0;
+}
+
+.footer-hdr-links1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: "Marcellous", sans-serif;
+}
+.footer-links {
+  margin-bottom: 20px;
+  font-family: "Manrope", sans-serif;
+}
+.footer-hdr-links2 {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 20px;
+}
+.ftr-email {
+  padding: 10px;
+  width: 100%;
+  margin: 20px 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.sub-bnt {
+  text-align: center;
+  background: var(--primary-color);
+  padding: 20px 100px;
+  font-family: "Manrope", sans-serif;
+}
+/***********************************Footer-btm**************************/
+.footer-btm {
+  padding-top: 80px;
+}
+.footer-btm::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  /* bottom: 0; */
+  left: 0;
+  right: 0;
+  background: white !important;
+}
+.footer-btm-items {
+  margin: 20px;
+}
+
+/*********************************************Media queries*******************************/
+@media (max-width: 576px) {
+  .treatment-cntn::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: var(--primary-color);
+    left: 190px !important;
+
+    top: 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  .treatment-section .treatment-items,
+  .treatment-section .row {
+    flex-direction: column;
+  }
+
+  .treatment-section .row .col-4 {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .treatment-section .common-sub-hdr {
+    font-size: 30px;
+  }
+  .treatment-items > li {
+    margin-bottom: 20px;
+  }
+  .treatment-cntn::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: var(--primary-color);
+    left: 340px;
+
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+  .offcanvas {
+    padding-top: 200px;
+
+    flex-direction: column;
+  }
+
+  .offcanvas.show {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 8px;
+    position: relative;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+    left: 1px;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    height: 2px;
+    width: 30px;
+    background: white;
+    transition: 0.5s linear;
+    position: relative;
+    /* opacity: 0; */
+  }
+
+  .navbar-toggler::after {
+    position: absolute;
+    content: "";
+    background: white;
+    height: 2px;
+    width: 30px;
+    left: 0px;
+    top: 23px;
+    transition: 0.5s linear;
+    /* transform: rotate(45deg); */
+  }
+  .navbar-toggler::before {
+    position: absolute;
+    content: "";
+    background: white;
+    height: 2px;
+    width: 30px;
+    left: 0px;
+    bottom: 18px;
+    transition: 0.5s linear;
+    /* transform: translateY(50px) rotate(-45deg); */
+  }
+
+  .navbar-toggler.activeshow.navbar-toggler-icon {
+    transform: translateX(-20px);
+    opacity: 0 !important;
+  }
+
+  .navbar-toggler.activeshow::after {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler.activeshow::before {
+    transform: translateY(24px) rotate(-45deg);
+  }
+
+  .footer-section .row .col-3 {
+    flex-direction: column !important;
+  }
+  .footer-section .col-3 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-section .ftr-para {
+    margin: 0 auto;
+  }
+
+  .footer-cntn a,
+  .footer-social-links {
+    justify-content: center !important;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 1210px) {
+  /* .top-row,
+  .down-row {
+    flex-direction: column;*/
+
+  .therapy-section .row > div:nth-child(1) {
+    order: 2;
+  }
+  .therapy-section .row > div:nth-child(5) {
+    order: 1;
+  }
+  .therapy-section .row > div:nth-child(2) {
+    order: 3;
+  }
+  .therapy-section .row > div:nth-child(6) {
+    order: 4;
+  }
+  .therapy-section .row > div:nth-child(3) {
+    order: 6;
+  }
+  .therapy-section .row > div:nth-child(7) {
+    order: 5;
+  }
+  .therapy-section .row > div:nth-child(4) {
+    order: 7;
+  }
+  .therapy-section .row > div:nth-child(1) {
+    order: 8;
+  }
+
+  .therapy-section .row {
+    flex-direction: column;
+  }
+
+  .therapy-section .row .col-3 {
+    width: 50%;
+  }
+}
+
+/*
+.therapy-img1
+  .therapy-1 {
+    order: 1;
+  }
+  .therapy-img2,
+  .therapy-2 {
+    order: -2;
+  } */
+
+/*
+  .therapy-img2,
+  .therapy-2 {
+    order: 4;
+  }
+  .therapy-img3,
+  .therapy-3 {
+    order: 2;
+  }
+  .therapy-img4,
+  .therapy-4 {
+    order: 3;
+    } */
