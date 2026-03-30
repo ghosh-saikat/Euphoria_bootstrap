@@ -107,20 +107,19 @@ p {
 /********************************Banner-section**********************/
 
 .banner-section {
-  background: url("../aboutus-assets/aboutus-banner.png") no-repeat center/cover;
+  background: url("../testimonial-assets/testimonial-banner.png") no-repeat
+    center/cover;
   min-height: 100vh;
   padding: 300px 0;
 }
 .banner-para {
   color: white;
   max-width: 846px;
+  text-align: center;
+  font-size: 30px;
 }
 .banner-cntn {
   max-width: 1024px !important;
-}
-.banner-section .title2 h5 {
-  color: var(--primary-color);
-  font-family: "Manrope", sans-serif;
 }
 
 .banner-section .title1 h1 {
@@ -128,176 +127,112 @@ p {
   color: white;
   font-family: "Marcellus", sans-serif;
   margin-top: 50px;
+  text-align: center;
+  font-weight: 100;
+}
+.banner-para1 {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
 }
 
 .banner-bnt {
   margin-top: 50px;
 }
 
-/**********************************Aboutus-section*******************************/
-.aboutus-section {
-  padding: 95px 0;
-  position: relative;
+/**********************************Testimonial-section***************************/
+
+.testimonial-section {
+  padding: 120px 0;
+  background: url("../testimonial-assets/testimonial-bg.png") no-repeat
+    center/cover;
 }
 
-.booknow-area {
-  background: var(--secondary-bg);
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  margin-top: 30px;
-  max-width: 332px !important;
+.testimonial-section .common-sub-hdr {
+  line-height: 60px;
+  letter-spacing: 2%;
+  max-width: 617px;
 }
-.calling-button {
-  background: var(--text-color);
-  border-radius: 100px;
-  padding: 10px;
-  margin-left: 10px;
+.testimmonial-para {
+  max-width: 591px;
+  margin-top: 80px;
 }
-.booknow-cntn {
-  padding: 18px 0;
+.ml {
   margin-left: 20px;
 }
-.border-left-color {
-  background: var(--primary-color);
-  height: 85px;
-  width: 35px;
+.testimonial-card-cntn {
+  padding: 30px;
 }
-.aboutus-section .image2 {
-  bottom: -46px;
-  z-index: -1;
-  left: 298px;
-}
-
-.image1 {
-  max-width: 300px !important;
-}
-.about-para h2 {
-  padding: 10px 0;
-}
-
-.know-more-button {
-  margin-top: 30px;
-}
-
-.aboutus-hdr svg {
-  margin-bottom: 20px;
-}
-
-.aboutus-hdr p {
-  color: var(--primary-color);
-}
-
-.about-cntn {
-  max-width: 662px !important;
-}
-.know-more-button {
-  position: relative;
-  z-index: 99;
-}
-.know-more-button::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: grey;
-  left: 0;
-  top: -21px;
-}
-
-/********************************aboutus-review************************/
-
-.aboutus-review {
-  background: var(--primary-color);
-  margin-top: 135px;
-  padding: 40px 0;
-  color: white;
-}
-.aboutus-line {
-  height: 2px;
-  width: 80px;
+.testimonial-card {
+  padding: 40px;
   background: white;
-  transform: rotate(90deg);
-}
-.aboutus-review-hdr {
-  font-size: 45px;
 }
 
-.aboutus-review-cntn {
-  margin-left: 30px;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-/*******************************benefit-section****************************/
-
-.benefit-section {
-  position: relative;
-  padding: 105px 0;
-  background: url("../aboutus-assets/benefit-bg.png") no-repeat right/cover;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.benefit-section .common-sub-hdr {
-  /* max-width: 580px; */
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.benefit-hdr {
-  color: var(--primary-color);
-  font-size: 24px;
-}
-
-.benefit-card-cntn {
-  max-width: 400px !important;
-  padding: 20px;
-  box-shadow: 0px 4px 9px black;
-  margin: 20px 5px;
-}
-
-.benefit-hdr > img {
-  margin-right: 20px;
-}
-.benefit-card-bottom {
-  margin-top: 50px;
-  padding: 20px;
-}
-.benefit-card-top {
-  margin-top: 40px;
-}
-
-.benefit-card-footer {
-  position: absolute;
-  left: -20px;
-  right: 0;
-  bottom: -50px;
-}
-.benefit-card-cntn {
-}
-/***************************************Story-section**********************/
-
-.story-section {
-  padding: 120px 0;
-}
-.story-section .common-sub-hdr {
-  text-align: left;
-}
-
-.story-para {
-  margin: 20px 0;
-  max-width: 575px;
-}
-.story-section .row {
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
 }
 
-.achievement-para {
-  margin: 30px 0 50px 0;
-  max-width: 1209px;
+.swiper-button-next,
+.swiper-button-prev {
+  background: lightsalmon;
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+  /* background: url("../testimonial-assets/circle-arrow-right-01.png"); */
 }
-.achievement-section {
-  padding-top: 100px;
+
+/********************************testimonial-comments*******************************/
+
+.testimonial-comments {
+  background: var(--secondary-bg);
+  padding: 100px 0 200px 0;
 }
+.testimonial-comments-para {
+  max-width: 925px;
+}
+.testimonial-comments-cntn {
+  /* max-width: 513px; */
+}
+.test-card {
+  max-width: 513px;
+}
+.testimonial-comments .testimmonial-para {
+  margin: 0;
+}
+.testimonial-comments .test-card {
+  margin: 20px 10px;
+}
+
 .blog-footer {
   padding: 120px 0;
 }
 
-/****************************Footer-section******************/
+/***********************************Footer-section*******************************/
 
 .footer-section {
   padding: 105px 0 0 0;
@@ -467,57 +402,28 @@ p {
 }
 
 @media (max-width: 769px) {
-  .story-section .row {
-    flex-direction: column-reverse;
+  .testimonial-section .row {
+    flex-direction: column !important;
   }
-  .story-section .row .col-6 {
-    width: 80%;
-    text-align: center;
-    margin-top: 20px;
+
+  .testimonial-section .row .col-6 {
+    width: 100%;
   }
-  .story-section .common-hdr {
-    justify-content: center;
+
+  .testimonial-section .testimonial-card-cntn {
+    flex-direction: column;
   }
-  .story-section .common-sub-hdr {
-    text-align: center;
+  .testimonial-colon {
+    width: 90%;
+  }
+  .testimonial-section .joint-testimonial {
+    justify-content: center !important;
+  }
+  .testimonial-card-cntn {
+    justify-content: center !important;
+  }
+  .common-sub-hdr {
     font-size: 30px !important;
-  }
-}
-@media (max-width: 1200px) {
-  .aboutus-section .row .coloumn-2 {
-    width: 100%;
-    margin-top: 100px;
-  }
-  .aboutus-section .row .coloumn-1 {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .aboutus-section .row {
-    flex-direction: column;
-  }
-
-  .coloumn-2 .aboutus-cntn {
-    text-align: center;
-  }
-
-  .aboutus-section .image2 {
-    bottom: -46px;
-    z-index: -1;
-    left: 297px;
-  }
-  /* .aboutus-image-section {
-    margin: 0 auto !important;
-  } */
-
-  .aboutus-hdr {
-    justify-content: center;
-  }
-
-  .aboutus-review {
-    flex-direction: column;
-  }
-  .aboutus-review .review {
-    margin-top: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -527,23 +433,5 @@ p {
   }
   .blog-footer-cntn img {
     margin-top: 40px;
-  }
-}
-@media (max-width: 426px) {
-  .aboutus-img-section .img-1 {
-    width: 33% !important;
-  }
-  .aboutus-img-section .img-2 {
-    width: 90px !important;
-  }
-
-  .aboutus-section .image2 {
-    bottom: 114px;
-    z-index: -1;
-    left: 200px;
-  }
-
-  .benefit-footer-img {
-    width: 80%;
   }
 }

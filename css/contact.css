@@ -32,18 +32,13 @@
   src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 }
 
-.custom-container1320 {
-  max-width: 1344px !important;
+.custom-container1420 {
+  max-width: 1444px !important;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-.custom-container {
-  max-width: 1744px !important;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .custom-container1520 {
   max-width: 1544px !important;
   width: 100%;
@@ -80,7 +75,7 @@ p {
 }
 
 .bnt {
-  padding: 19px 40px 19px 40px;
+  padding: 19px 20px 19px 32px;
   color: white;
   background: var(--primary-color);
 }
@@ -111,16 +106,20 @@ p {
   min-height: 100vh;
   padding: 300px 0;
 }
+
+.banner-section {
+  background: url("../aboutus-assets/aboutus-banner.png") no-repeat center/cover;
+  min-height: 100vh;
+  padding: 300px 0;
+}
 .banner-para {
   color: white;
   max-width: 846px;
+  text-align: center;
+  font-size: 30px;
 }
 .banner-cntn {
   max-width: 1024px !important;
-}
-.banner-section .title2 h5 {
-  color: var(--primary-color);
-  font-family: "Manrope", sans-serif;
 }
 
 .banner-section .title1 h1 {
@@ -128,175 +127,88 @@ p {
   color: white;
   font-family: "Marcellus", sans-serif;
   margin-top: 50px;
+  text-align: center;
+  font-weight: 100;
+}
+.banner-para1 {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
 }
 
 .banner-bnt {
   margin-top: 50px;
 }
 
-/**********************************Aboutus-section*******************************/
-.aboutus-section {
-  padding: 95px 0;
-  position: relative;
-}
-
-.booknow-area {
-  background: var(--secondary-bg);
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  margin-top: 30px;
-  max-width: 332px !important;
-}
-.calling-button {
-  background: var(--text-color);
-  border-radius: 100px;
-  padding: 10px;
-  margin-left: 10px;
-}
-.booknow-cntn {
-  padding: 18px 0;
-  margin-left: 20px;
-}
-.border-left-color {
-  background: var(--primary-color);
-  height: 85px;
-  width: 35px;
-}
-.aboutus-section .image2 {
-  bottom: -46px;
-  z-index: -1;
-  left: 298px;
-}
-
-.image1 {
-  max-width: 300px !important;
-}
-.about-para h2 {
-  padding: 10px 0;
-}
-
-.know-more-button {
-  margin-top: 30px;
-}
-
-.aboutus-hdr svg {
-  margin-bottom: 20px;
-}
-
-.aboutus-hdr p {
-  color: var(--primary-color);
-}
-
-.about-cntn {
-  max-width: 662px !important;
-}
-.know-more-button {
-  position: relative;
-  z-index: 99;
-}
-.know-more-button::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  background: grey;
-  left: 0;
-  top: -21px;
-}
-
-/********************************aboutus-review************************/
-
-.aboutus-review {
-  background: var(--primary-color);
-  margin-top: 135px;
-  padding: 40px 0;
-  color: white;
-}
-.aboutus-line {
-  height: 2px;
-  width: 80px;
-  background: white;
-  transform: rotate(90deg);
-}
-.aboutus-review-hdr {
-  font-size: 45px;
-}
-
-.aboutus-review-cntn {
-  margin-left: 30px;
-}
-
-/*******************************benefit-section****************************/
-
-.benefit-section {
-  position: relative;
+/*****************************Contact-section***********************/
+.contact-section {
   padding: 105px 0;
-  background: url("../aboutus-assets/benefit-bg.png") no-repeat right/cover;
 }
 
-.benefit-section .common-sub-hdr {
-  /* max-width: 580px; */
+.contact-links {
+  max-width: 438px;
+  background: #f3d2ce;
+  margin: 20px;
+  padding: 30px 10px;
+  /* opacity: 0.5; */
+}
+.contact-section .common-sub-hdr {
+  margin-bottom: 50px;
+}
+.contact-hdr {
+  font-size: 20px;
+}
+.contact-para {
+  font-size: 14px;
 }
 
-.benefit-hdr {
+.contact-map {
+  max-width: 558px;
+}
+
+/***********************get-in-touch-section***************************/
+
+.get-in-touch-section {
+  padding: 105px 0;
+}
+
+.testimonial-section .testimonial-form-cntn {
+  margin-left: 50px;
+}
+.testimonial-form-items {
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  max-width: 637px !important;
+}
+.testimonial-para {
+  color: grey;
+}
+.testimonial-bnt {
+  cursor: pointer;
+}
+.form-hdr {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Marcellus", sans-serif;
+  max-width: 389px;
+  text-align: center;
   color: var(--primary-color);
-  font-size: 24px;
 }
 
-.benefit-card-cntn {
-  max-width: 400px !important;
-  padding: 20px;
-  box-shadow: 0px 4px 9px black;
-  margin: 20px 5px;
+.get-in-touch-section form {
+  box-shadow: 0 0 10px grey;
+  padding: 60px 50px;
+  border-radius: 5px;
 }
-
-.benefit-hdr > img {
-  margin-right: 20px;
+.get-in-touch-section .common-sub-hdr {
+  margin-bottom: 30px;
 }
-.benefit-card-bottom {
-  margin-top: 50px;
-  padding: 20px;
+.form-control {
+  /* margin: 10px; */
 }
-.benefit-card-top {
-  margin-top: 40px;
-}
-
-.benefit-card-footer {
-  position: absolute;
-  left: -20px;
-  right: 0;
-  bottom: -50px;
-}
-.benefit-card-cntn {
-}
-/***************************************Story-section**********************/
-
-.story-section {
-  padding: 120px 0;
-}
-.story-section .common-sub-hdr {
-  text-align: left;
-}
-
-.story-para {
-  margin: 20px 0;
-  max-width: 575px;
-}
-.story-section .row {
-  margin-top: 50px;
-}
-
-.achievement-para {
-  margin: 30px 0 50px 0;
-  max-width: 1209px;
-}
-.achievement-section {
-  padding-top: 100px;
-}
-.blog-footer {
-  padding: 120px 0;
-}
-
 /****************************Footer-section******************/
 
 .footer-section {
@@ -374,7 +286,48 @@ p {
   margin: 20px;
 }
 
-/*****************************Media-queries******************/
+/*********************************************Media queries*******************************/
+@media (max-width: 576px) {
+  .treatment-cntn::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: var(--primary-color);
+    left: 190px !important;
+
+    top: 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  .treatment-section .treatment-items,
+  .treatment-section .row {
+    flex-direction: column;
+  }
+
+  .treatment-section .row .col-4 {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .treatment-section .common-sub-hdr {
+    font-size: 30px;
+  }
+  .treatment-items > li {
+    margin-bottom: 20px;
+  }
+  .treatment-cntn::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: var(--primary-color);
+    left: 340px;
+
+    top: 30px;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .navbar-nav .nav-link {
@@ -466,84 +419,16 @@ p {
   }
 }
 
-@media (max-width: 769px) {
-  .story-section .row {
-    flex-direction: column-reverse;
+@media (max-width: 768px) {
+  .get-in-touch-section .row {
+    flex-direction: column;
   }
-  .story-section .row .col-6 {
-    width: 80%;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .story-section .common-hdr {
+  .get-in-touch-section .row .col-6 {
+    width: 70%;
     justify-content: center;
   }
-  .story-section .common-sub-hdr {
-    text-align: center;
-    font-size: 30px !important;
-  }
-}
-@media (max-width: 1200px) {
-  .aboutus-section .row .coloumn-2 {
-    width: 100%;
-    margin-top: 100px;
-  }
-  .aboutus-section .row .coloumn-1 {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .aboutus-section .row {
-    flex-direction: column;
-  }
-
-  .coloumn-2 .aboutus-cntn {
-    text-align: center;
-  }
-
-  .aboutus-section .image2 {
-    bottom: -46px;
-    z-index: -1;
-    left: 297px;
-  }
-  /* .aboutus-image-section {
-    margin: 0 auto !important;
-  } */
-
-  .aboutus-hdr {
+  .testimonial-form {
     justify-content: center;
-  }
-
-  .aboutus-review {
-    flex-direction: column;
-  }
-  .aboutus-review .review {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 600px) {
-  .blog-footer-cntn {
-    flex-direction: column;
-    width: 100%;
-  }
-  .blog-footer-cntn img {
-    margin-top: 40px;
-  }
-}
-@media (max-width: 426px) {
-  .aboutus-img-section .img-1 {
-    width: 33% !important;
-  }
-  .aboutus-img-section .img-2 {
-    width: 90px !important;
-  }
-
-  .aboutus-section .image2 {
-    bottom: 114px;
-    z-index: -1;
-    left: 200px;
-  }
-
-  .benefit-footer-img {
-    width: 80%;
+    margin: 0;
   }
 }
