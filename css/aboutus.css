@@ -354,6 +354,7 @@ p {
   text-align: center;
   background: var(--primary-color);
   padding: 20px 100px;
+  cursor: pointer;
   font-family: "Manrope", sans-serif;
 }
 /***********************************Footer-btm**************************/

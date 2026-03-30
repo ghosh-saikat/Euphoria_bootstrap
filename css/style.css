@@ -77,6 +77,15 @@ p {
   padding: 19px 20px 19px 32px;
   color: white;
   background: var(--primary-color);
+  transform: translate(0, 0);
+}
+
+.bnt:hover {
+  opacity: 0.5;
+  transition: 0.5s linear;
+}
+.bnt > img:hover {
+  transform: translate(5px, -10px);
 }
 /********************************Navbar************************/
 .nav-link {
@@ -742,6 +751,7 @@ p {
   background: var(--primary-color);
   padding: 20px 100px;
   font-family: "Manrope", sans-serif;
+  cursor: pointer;
 }
 /***********************************Footer-btm**************************/
 .footer-btm {
@@ -1250,7 +1260,7 @@ p {
   }
 
   .membership-bnt .bnt {
-    padding: 10px;
+    padding: 9px;
   }
 }
 

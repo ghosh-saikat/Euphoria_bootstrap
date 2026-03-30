@@ -267,6 +267,7 @@ p {
   background: var(--primary-color);
   padding: 20px 100px;
   font-family: "Manrope", sans-serif;
+  cursor: pointer;
 }
 /***********************************Footer-btm**************************/
 .footer-btm {
