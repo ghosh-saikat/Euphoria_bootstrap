@@ -32,6 +32,12 @@
   src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 }
 
+.custom-container1820 {
+  max-width: 1844px !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .custom-container1420 {
   max-width: 1444px !important;
   width: 100%;

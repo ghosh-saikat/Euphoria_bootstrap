@@ -98,6 +98,10 @@ p {
   transform: translate(5px, -10px);
 }
 
+*.active {
+  color: var(--primary-color);
+}
+
 /********************************Navbar************************/
 .nav-link {
   color: white;
@@ -487,7 +491,7 @@ p {
 }
 
 .swiper {
-  max-width: 100%;
+  width: 50%;
   height: 100%;
 }
 
@@ -570,8 +574,12 @@ p {
   padding-top: 116px;
 }
 
+.gallery-hdr {
+  margin-bottom: 40px;
+}
+
 .swiper {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 
@@ -619,7 +627,7 @@ p {
 }
 
 .test-card-border {
-  max-width: 630px;
+  max-width: 630px !important;
   border: 1px solid grey;
   padding: 20px;
   margin-top: 25px;
@@ -671,6 +679,26 @@ p {
   left: 130px;
   right: 0;
   top: 0;
+}
+
+.marquee-section-testimonial {
+  padding: 50px 0;
+  /* font-size: 80px; */
+  /* box-sizing: border-box; */
+  font-family: "Marcellus";
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-cntn1-testimonial {
+  display: inline-block;
+  width: max-content;
+  /* padding-left: 100%; */
+  animation: mSlide1 5s linear infinite;
+}
+.marquee-section-testimonial .testimonial-card-para {
+  max-width: 603px !important;
+  text-wrap: wrap;
 }
 
 /**************************Talk to us section**************************/
@@ -1048,8 +1076,8 @@ p {
 }
 
 @media (max-width: 426px) {
-  * .common-sub-hdr {
-    font-size: 30px;
+  *.common-sub-hdr {
+    font-size: 30px !important;
     text-align: center;
   }
 
@@ -1057,7 +1085,7 @@ p {
     margin: 0 10px !important;
   }
   .contact-section .rectangle-image .rect3 {
-    width: 100%;
+    width: 50%;
   }
   .contact-section .rectangle-image {
     flex-direction: column !important;
