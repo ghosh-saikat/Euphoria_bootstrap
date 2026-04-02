@@ -103,6 +103,9 @@ p {
   /* margin-left: 95px; */
   padding: 15.5px 0;
 }
+.nav-link:hover {
+  color: #de968d;
+}
 
 /********************************Banner-section**********************/
 

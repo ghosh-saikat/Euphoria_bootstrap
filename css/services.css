@@ -8,12 +8,7 @@
   --secondary-bg: #27252a;
   --text-color: white;
 }
-.custom_container1520 {
-  max-width: 1544px !important;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .common-hdr {
   color: var(--primary-color);
 }
@@ -31,14 +26,21 @@
   font-family: "Manrope", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 }
-
+*.active {
+  color: var(--primary-color) !important;
+}
 .custom-container1320 {
   max-width: 1344px !important;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.custom-container1220 {
+  max-width: 1244px !important;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .custom-container1520 {
   max-width: 1544px !important;
   width: 100%;
@@ -98,7 +100,9 @@ p {
   /* margin-left: 95px; */
   padding: 15.5px 0;
 }
-
+.nav-link:hover {
+  color: #de968d;
+}
 /********************************Banner-section**********************/
 
 .banner-section {

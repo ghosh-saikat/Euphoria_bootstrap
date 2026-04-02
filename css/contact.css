@@ -79,6 +79,9 @@ p {
   color: white;
   background: var(--primary-color);
 }
+*.active {
+  color: var(--primary-color) !important;
+}
 /******************************************Navbar**********************************/
 .nav-link {
   color: white;
@@ -98,7 +101,9 @@ p {
   /* margin-left: 95px; */
   padding: 15.5px 0;
 }
-
+.nav-link:hover {
+  color: #de968d;
+}
 /********************************Banner-section**********************/
 
 .banner-section {
